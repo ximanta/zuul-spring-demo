@@ -1,0 +1,33 @@
+<!--<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Restaurant-App</title>
+</head>
+<body>
+
+<h1>Welcome to our restaurant</h1>
+
+<a href = "/add">Add Restaurant</a><br>
+<a href = "/display">View all Restaurants</a><br>
+</body>
+</html> -->
+
+<h1>
+<center>Restaurant Service template</center>
+
+    <body>
+    <h2>This is a sample for UI as Microservice Sample, communicating with another backend microservice</h2>
+    <div id="mydiv"></div>
+    <script>
+  fetch('/user/user')
+    .then(response => response.json())
+    .then(data => {
+      document.getElementById("mydiv").value = data;
+    })
+    .catch(error => console.error(error))
+
+  </script>
+    </body>
+
+    </html>
+</h1>
